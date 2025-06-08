@@ -9,11 +9,18 @@ int main() {
     int opcao, id;
     std::string nome;
     float salario;
-    int contador = 0;
 
-    while (contador < 6) {
-        std::cout << "Cadastrar:\n1 - Desenvolvedor\n2 - Gerente\n3 - Estagiário\nOpção: ";
+    while (funcionarios.size() < 10) {
+        std::cout << "Cadastrar:\n1 - Desenvolvedor\n2 - Gerente\n3 - Estagiário\n";
+        if (funcionarios.size() >= 6) {
+            std::cout << "4 - Exibir informações e sair\n";
+        }
+        std::cout << "Opção: ";
         std::cin >> opcao;
+
+        if (opcao == 4 && funcionarios.size() >= 6) {
+            break;
+        }
 
         std::cout << "ID: ";
         std::cin >> id;
@@ -61,7 +68,7 @@ int main() {
 
         if (f) {
             funcionarios.push_back(f);
-            contador++;
+            std::cout << "Funcionário cadastrado com sucesso. Total cadastrados: " << funcionarios.size() << "/10\n\n";
         }
     }
 
