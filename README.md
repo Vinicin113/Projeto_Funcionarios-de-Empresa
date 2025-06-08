@@ -68,10 +68,8 @@ Salário base: 3000.00
 Salário final: 4500.00
 ```
 
-Autor
+## Autor
 
-Vinicius Marques de Almeida
-
-Aluno de Tecnologia da Informação – UFRN
-
+Vinicius Marques de Almeida  
+Aluno de Tecnologia da Informação – UFRN  
 Projeto desenvolvido para a disciplina de Linguagem de Programação I
